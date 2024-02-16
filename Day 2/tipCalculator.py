@@ -9,6 +9,6 @@ num_people = float(input("How many people to split the bill with? "))
 # Calculate the amount each person should pay
 total_bill_with_tip = bill_amount * (1 + tip_percent / 100)
 share_per_person = total_bill_with_tip / num_people
-
+rounded_share_per_person = "{0:.2f}".format(share_per_person)
 # Display the amount each person should pay, rounded to two decimal places
-print(f"Each person should pay: {round(share_per_person, 2)}")
+print(f"Each person should pay: {rounded_share_per_person}")
